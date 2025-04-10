@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.score_board{
+    height: 5rem;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.score_card{
+    font-size: 20px;
+    color: white;
+}
+
+.bubble_container {
+    display: flex;
+    justify-content: center;
+    max-width: 60rem;
+    margin: auto;
+    height: calc(100% - 5rem); /*ye calculation isliye ki q k 5rem height score board ne li hai to usko minus kr k baki 100% bubble container ko de dain ge.*/
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.bubble{
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 0 10px rgba(0,0,0,4);
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+    user-select: none;
+    cursor: pointer;  
+}
+
+/*after game overs then following is for appended html*/
+.append_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.game_over {
+    font-size: 30px;
+    font-weight: bolder;
+    color: tomato;
+}
+
+.final_score {
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgba(1, 144, 1, 0.899);
+}
+
+.reset_btn{
+    padding: 1rem 3rem;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
